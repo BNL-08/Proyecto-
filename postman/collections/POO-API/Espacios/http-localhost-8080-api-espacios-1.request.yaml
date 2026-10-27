@@ -1,0 +1,6 @@
+$kind: http-request
+name: http://localhost:8080/api/espacios
+description: ""
+url: http://localhost:8080/api/espacios
+method: GET
+order: 5000

@@ -1,0 +1,13 @@
+$kind: http-request
+name: http://localhost:8080/api/espacios
+description: ""
+url: http://localhost:8080/api/espacios
+method: POST
+body:
+  type: json
+  content: "{ \"nombre\": \"Aula Magna\",\r
+
+    \ \"capacidad\": 50\r
+
+    \  }"
+order: 4000

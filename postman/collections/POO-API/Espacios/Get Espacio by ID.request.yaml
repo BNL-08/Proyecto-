@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get Espacio by ID
+method: GET
+url: '{{baseUrl}}/api/espacios/{{id}}'
+order: 2000

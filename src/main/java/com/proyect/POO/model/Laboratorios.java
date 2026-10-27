@@ -7,7 +7,7 @@ public class Laboratorios extends Espacios {
 
     public Laboratorios() {}
 
-    public Laboratorios(String nombre, String capacidad, int numeroComputadores) {
+    public Laboratorios(String nombre, int capacidad, int numeroComputadores) {
         super(nombre, capacidad);
         this.numeroComputadores = numeroComputadores;
     }

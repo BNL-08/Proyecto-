@@ -2,16 +2,13 @@ package com.proyect.POO.model;
 
 import jakarta.persistence.*;
 
-@Entity // La anotación @Entity indica que esta clase es una entidad de JPA (Java Persistence API) y se mapeará a una tabla en la base de datos.
-@Table(name = "usuarios") // Nombre que tendrar la "tabla" dentro de la base de datos
+@Entity 
+@Table(name = "usuarios") 
 public class Usuarios { 
 
-    @Id // indica que el atributo id es la clave primaria de la entidad. Hace que cada usuario
-    //  o espacio tenga un número único e irrepetible en la base de 
-    
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // Generacion autoincrementable, le dice a la base de datos que genere 
-    // automáticamente un valor único para el campo id cada vez que se inserta un nuevo registro en la tabla.
-    
+    @Id 
+    @GeneratedValue(strategy = GenerationType.IDENTITY) 
+
     private Long id;
 
     private String nombre;

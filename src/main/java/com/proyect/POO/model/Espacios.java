@@ -4,15 +4,15 @@ import jakarta.persistence.*;
 @Entity 
 @Inheritance (strategy = InheritanceType.JOINED)
 @Table (name = "espacios")
-public abstract class Espacios {
+public class Espacios {
     @Id 
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private long id;
     private String nombre;
-    private String capacidad; 
+    private int capacidad; 
 
     public Espacios() {}
-    public Espacios(String nombre, String capacidad) {
+    public Espacios(String nombre, int capacidad) {
         this.nombre = nombre;
         this.capacidad = capacidad;
     }
@@ -28,10 +28,10 @@ public abstract class Espacios {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public String getCapacidad() {
+    public int getCapacidad() {
         return capacidad;
     }
-    public void setCapacidad(String capacidad) {
+    public void setCapacidad(int capacidad) {
         this.capacidad = capacidad;
     }
 }
